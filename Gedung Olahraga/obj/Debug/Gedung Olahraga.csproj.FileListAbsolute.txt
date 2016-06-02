@@ -1,0 +1,13 @@
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\bin\Debug\Gedung Olahraga.exe
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\bin\Debug\Gedung Olahraga.pdb
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\bin\Debug\IrisSkin4.dll
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung Olahraga.csprojResolveAssemblyReference.cache
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form1.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Properties.Resources.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung Olahraga.csproj.GenerateResource.Cache
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung Olahraga.exe
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung Olahraga.pdb
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form2.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form3.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.FormSewa.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.FormBayar.resources
