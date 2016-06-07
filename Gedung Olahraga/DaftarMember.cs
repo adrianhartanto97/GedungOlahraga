@@ -9,7 +9,7 @@ namespace Gedung_Olahraga
     class DaftarMember
     {
         public static int urutan=101;
-        List<Member> daftar;
+        public List<Member> daftar;
 
         public DaftarMember()
         {
@@ -43,7 +43,7 @@ namespace Gedung_Olahraga
             foreach (Member m in daftar)
             {
                 table.Rows.Add(m.ID_member, m.nama, m.tempat_lahir + ", " + m.tanggal_lahir, m.jenis_kelamin, m.alamat, m.agama,
-                    m.pekerjaan,m.tanggal_join.ToShortDateString(),m.tanggal_expired.ToShortDateString());
+                    m.pekerjaan,m.tanggal_join.ToLongDateString(),m.tanggal_expired.ToLongDateString());
             }
             return table;
         }
@@ -71,6 +71,38 @@ namespace Gedung_Olahraga
                 }
             }
             return "";
+        }
+
+        public int cariMember(string kode)
+        {
+            int c = 0;
+            foreach (Member m in daftar)
+            {
+                if (kode == m.ID_member)
+                {
+                    return c; break;
+                }
+                c++;
+            }
+            return -1;
+        }
+
+        public void editMember(int p, string nama, string tempat_lahir, string tanggal_lahir, string jenis_kelamin,
+            string alamat, string agama, string pekerjaan)
+        {
+            daftar[p].nama = nama;
+            daftar[p].tempat_lahir = tempat_lahir;
+            daftar[p].tanggal_lahir = tanggal_lahir;
+            daftar[p].jenis_kelamin = jenis_kelamin;
+            daftar[p].alamat = alamat;
+            daftar[p].agama = agama;
+            daftar[p].pekerjaan = pekerjaan;
+        }
+
+        public void perpanjangMember(int p, int bulan)
+        {
+            TimeSpan ts = new TimeSpan(bulan * 30, 0, 0, 0);
+            daftar[p].tanggal_expired = daftar[p].tanggal_expired.Add(ts);
         }
     }
 }

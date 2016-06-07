@@ -7,16 +7,16 @@ namespace Gedung_Olahraga
 {
     class Member
     {
-        public string ID_member;
-        public string nama;
-        public string tempat_lahir;
-        public string tanggal_lahir;
-        public string jenis_kelamin;
-        public string alamat;
-        public string agama;
-        public string pekerjaan;
-        public DateTime tanggal_join;
-        public DateTime tanggal_expired;
+        public string ID_member { set; get; }
+        public string nama { set; get; }
+        public string tempat_lahir { set; get; }
+        public string tanggal_lahir { set; get; }
+        public string jenis_kelamin { set; get; }
+        public string alamat { set; get; }
+        public string agama { set; get; }
+        public string pekerjaan { set; get; }
+        public DateTime tanggal_join { set; get; }
+        public DateTime tanggal_expired { set; get; }
 
         public Member(string ID_member, string nama, string tempat_lahir, string tanggal_lahir, string jenis_kelamin,
             string alamat, string agama, string pekerjaan, DateTime tanggal_join, DateTime tanggal_expired)

@@ -210,5 +210,18 @@ namespace Gedung_Olahraga
             f7.Activate();
             f7.Show();
         }
+
+        Form8 f8;
+        private void button8_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+                if (form != null)
+                    form.Hide();
+
+            f8 = new Form8();
+            f8.MdiParent = this;
+            f8.Activate();
+            f8.Show();
+        }
     }
 }
