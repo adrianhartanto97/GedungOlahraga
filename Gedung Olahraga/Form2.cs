@@ -13,28 +13,23 @@ namespace Gedung_Olahraga
     public partial class Form2 : Form
     {
         GelanggangOlahraga GOR;
+        Transaksi transaksi;
         int minutes1,seconds1,hours1;
         int minutes2, seconds2, hours2;
+        int waktu = 0;
         public Form2()
         {
             InitializeComponent();
             GOR = ClsTransfer.gor;
+            transaksi = ClsTransfer.transaksi;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             this.Location = new Point(0, 130);
-            /*
-            string s;
-            s = String.Format("{0} ({1})", GOR.lapangan_bulutangkis[0].nama_lapangan, GOR.lapangan_bulutangkis[0].jenis);
-            label1.Text = s;
-
-            s = GOR.lapangan_bulutangkis[0].status();
-            label3.Text = s;
-            if (s == "Free") label3.ForeColor = Color.Green;
-            else label3.ForeColor = Color.Red;*/
             refresh1();
             refresh2();
+            timer3.Enabled = true;
         }
 
         protected override void WndProc(ref Message m)
@@ -79,8 +74,9 @@ namespace Gedung_Olahraga
                 button1.Enabled = false;
                 button2.Enabled = true;
                 button3.Enabled = true;
-            }
-            
+
+                transaksi.tambahtransaksi(nama_penyewa, "Bulutangkis", "Lapangan 1", DateTime.Now, selesai, tagihan);
+            }       
         }
 
         public void refresh1()
@@ -177,7 +173,7 @@ namespace Gedung_Olahraga
 
         private void button2_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
+             timer1.Stop();
             FormBayar fb = new FormBayar(GOR.detail_sewabulutangkis("Lapangan 1"));
             fb.ShowDialog();
             GOR.bayar_bulutangkis("Lapangan 1");
@@ -213,6 +209,8 @@ namespace Gedung_Olahraga
                 button4.Enabled = false;
                 button6.Enabled = true;
                 button5.Enabled = true;
+
+                transaksi.tambahtransaksi(nama_penyewa, "Bulutangkis", "Lapangan 2", DateTime.Now, selesai, tagihan);
             }
             
         }
@@ -298,6 +296,22 @@ namespace Gedung_Olahraga
             button6.Enabled = false;
             button5.Enabled = false;
             button5.Text = "Stop";
+        }
+
+        int c=0;
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            string x;
+            if (waktu % 20 == 0)
+            { 
+                x = "badminton_"+(c+1).ToString();
+                object o = Properties.Resources.ResourceManager.GetObject(x);
+                this.BackgroundImage = (Image)o;
+                
+                c++;
+                c%=5;
+            }
+            waktu++;
         }
     }
 }

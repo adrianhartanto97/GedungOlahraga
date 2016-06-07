@@ -14,10 +14,12 @@ namespace Gedung_Olahraga
         long tarif;
         long tagihan;
         bool ismember;
+        DaftarMember daftar;
         public FormSewa(long tarif)
         {
             InitializeComponent();
             this.tarif = tarif;
+            daftar = ClsTransfer.daftar;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,11 +73,13 @@ namespace Gedung_Olahraga
 
         private void button3_Click(object sender, EventArgs e)
         {
+            daftar = ClsTransfer.daftar;
             if (button3.Text == "Cek")
             {
-                if (textBox1.Text == "123")
+                if (daftar.isMember(textBox1.Text))
                 {
                     ismember = true; refresh_harga();
+                    textBox2.Text = daftar.namaMember(textBox1.Text);
                     MessageBox.Show("Terdaftar sebagai member ", "Cek Member", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     button3.Text = "Ubah";
                     textBox1.Enabled = false;

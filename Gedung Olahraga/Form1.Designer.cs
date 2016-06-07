@@ -35,15 +35,20 @@
             this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pegawaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.olahragaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // skinEngine1
@@ -73,28 +78,39 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.memberToolStripMenuItem,
             this.pegawaiToolStripMenuItem,
-            this.olahragaToolStripMenuItem});
+            this.olahragaToolStripMenuItem,
+            this.transaksiToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // memberToolStripMenuItem
             // 
             this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            this.memberToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.memberToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.memberToolStripMenuItem.Text = "Member";
+            this.memberToolStripMenuItem.Click += new System.EventHandler(this.memberToolStripMenuItem_Click);
             // 
             // pegawaiToolStripMenuItem
             // 
             this.pegawaiToolStripMenuItem.Name = "pegawaiToolStripMenuItem";
-            this.pegawaiToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.pegawaiToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.pegawaiToolStripMenuItem.Text = "Pegawai";
             // 
             // olahragaToolStripMenuItem
             // 
             this.olahragaToolStripMenuItem.Name = "olahragaToolStripMenuItem";
-            this.olahragaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.olahragaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.olahragaToolStripMenuItem.Text = "Olahraga";
+            this.olahragaToolStripMenuItem.Click += new System.EventHandler(this.olahragaToolStripMenuItem_Click);
+            // 
+            // transaksiToolStripMenuItem
+            // 
+            this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
+            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.transaksiToolStripMenuItem.Text = "Transaksi";
+            this.transaksiToolStripMenuItem.Click += new System.EventHandler(this.transaksiToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -113,6 +129,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 125);
             this.panel1.TabIndex = 2;
+            this.panel1.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Location = new System.Drawing.Point(0, 190);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(884, 125);
+            this.panel2.TabIndex = 4;
+            this.panel2.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button6.Location = new System.Drawing.Point(44, 15);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(103, 98);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Register\r\nMember\r\nBaru";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -141,25 +181,26 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::Gedung_Olahraga.Properties.Resources.basket;
+            this.button3.Image = global::Gedung_Olahraga.Properties.Resources.futsal;
             this.button3.Location = new System.Drawing.Point(397, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 98);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Basket";
+            this.button3.Text = "Futsal";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Gedung_Olahraga.Properties.Resources.futsal;
+            this.button2.Image = global::Gedung_Olahraga.Properties.Resources.basket;
             this.button2.Location = new System.Drawing.Point(217, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 98);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Futsal";
+            this.button2.Text = "Basket";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -178,11 +219,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button7.Location = new System.Drawing.Point(397, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(103, 98);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Tampil\r\nDaftar\r\nMember";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 611);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -197,6 +252,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,6 +273,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem transaksiToolStripMenuItem;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

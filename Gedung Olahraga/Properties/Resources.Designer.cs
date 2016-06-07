@@ -63,9 +63,49 @@ namespace Gedung_Olahraga.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap badminton_court_vector_set {
+        internal static System.Drawing.Bitmap badminton_1 {
             get {
-                object obj = ResourceManager.GetObject("badminton_court_vector_set", resourceCulture);
+                object obj = ResourceManager.GetObject("badminton_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badminton_2 {
+            get {
+                object obj = ResourceManager.GetObject("badminton_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badminton_3 {
+            get {
+                object obj = ResourceManager.GetObject("badminton_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badminton_4 {
+            get {
+                object obj = ResourceManager.GetObject("badminton_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badminton_5 {
+            get {
+                object obj = ResourceManager.GetObject("badminton_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +123,29 @@ namespace Gedung_Olahraga.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap basket_court {
+            get {
+                object obj = ResourceManager.GetObject("basket_court", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bulutangkis {
             get {
                 object obj = ResourceManager.GetObject("bulutangkis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap color {
+            get {
+                object obj = ResourceManager.GetObject("color", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +176,16 @@ namespace Gedung_Olahraga.Properties {
         internal static System.Drawing.Bitmap renang {
             get {
                 object obj = ResourceManager.GetObject("renang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shuttlecock_md {
+            get {
+                object obj = ResourceManager.GetObject("shuttlecock_md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

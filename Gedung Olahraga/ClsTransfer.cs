@@ -12,5 +12,7 @@ namespace Gedung_Olahraga
         public static string nama_penyewa;
         public static int jam;
         public static long tagihan = 0;
+        public static Transaksi transaksi;
+        public static DaftarMember daftar;
     }
 }
