@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,14 +46,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -107,6 +107,16 @@
             this.panel1.Size = new System.Drawing.Size(807, 299);
             this.panel1.TabIndex = 3;
             this.panel1.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(316, 254);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 35);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Submit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 
@@ -216,16 +226,6 @@
             this.textBox2.Size = new System.Drawing.Size(206, 20);
             this.textBox2.TabIndex = 16;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(316, 254);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 35);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -269,14 +269,15 @@
             this.panel2.TabIndex = 0;
             this.panel2.Visible = false;
             // 
-            // label8
+            // button3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 27);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Perpanjang";
+            this.button3.Location = new System.Drawing.Point(72, 75);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(93, 32);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Perpanjang";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox2
             // 
@@ -290,15 +291,14 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             // 
-            // button3
+            // label8
             // 
-            this.button3.Location = new System.Drawing.Point(72, 75);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Perpanjang";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(20, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Perpanjang";
             // 
             // Form8
             // 
@@ -311,6 +311,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Kelola Member";

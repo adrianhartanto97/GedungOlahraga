@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace Gedung_Olahraga
 {
@@ -10,12 +11,16 @@ namespace Gedung_Olahraga
         public List<Bulutangkis> lapangan_bulutangkis;
         public List<Basket> lapangan_basket;
         public List<Futsal> lapangan_futsal;
+        public List<Renang> kolam_renang;
+        public List<Fitness> tempat_fitness;
 
         public GelanggangOlahraga()
         {
             lapangan_bulutangkis = new List<Bulutangkis>();
             lapangan_basket = new List<Basket>();
             lapangan_futsal = new List<Futsal>();
+            kolam_renang = new List<Renang>();
+            tempat_fitness = new List<Fitness>();
         }
 
         public void TambahLapanganBulutangkis(Bulutangkis baru)
@@ -31,6 +36,16 @@ namespace Gedung_Olahraga
         public void TambahLapanganFutsal(Futsal baru)
         {
             lapangan_futsal.Add(baru);
+        }
+
+        public void TambahKolamRenang(Renang baru)
+        {
+            kolam_renang.Add(baru);
+        }
+
+        public void TambahFitness(Fitness baru)
+        {
+            tempat_fitness.Add(baru);
         }
 
         public int cari_lapanganBulutangkis(string lapangan)
@@ -61,6 +76,17 @@ namespace Gedung_Olahraga
             foreach (Futsal b in lapangan_futsal)
             {
                 if (lapangan == b.nama_lapangan) { p = c; break; }
+                c++;
+            }
+            return p;
+        }
+
+        public int cari_kolamrenang(string kolam)
+        {
+            int p = -1; int c = 0;
+            foreach (Renang b in kolam_renang)
+            {
+                if (kolam == b.nama_lapangan) { p = c; break; }
                 c++;
             }
             return p;
@@ -170,6 +196,31 @@ namespace Gedung_Olahraga
         {
             int p = cari_lapanganFutsal(lapangan);
             lapangan_futsal[p].tersedia = true;
+        }
+
+        public void masukRenangAnak(string nama,bool member, int umur, string jenis_kelamin, DateTime masuk)
+        {
+            kolam_renang[0].tambah_pengunjung(nama,member, umur, jenis_kelamin, masuk);
+        }
+
+        public void masukRenangDewasa(string nama,bool member, int umur, string jenis_kelamin, DateTime masuk)
+        {
+            kolam_renang[1].tambah_pengunjung(nama,member, umur, jenis_kelamin, masuk);
+        }
+
+        public DataTable tampilPengunjungRenang(int p)
+        {
+            return kolam_renang[p].tampilPengunjung();
+        }
+
+        public void masukFitness(string nama, bool member, int umur, string jenis_kelamin, DateTime masuk)
+        {
+            tempat_fitness[0].tambah_pengunjung(nama, member, umur, jenis_kelamin, masuk);
+        }
+
+        public DataTable tampilPengunjungFitness()
+        {
+            return tempat_fitness[0].tampilPengunjung();
         }
     }
 }

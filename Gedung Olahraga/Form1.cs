@@ -96,6 +96,15 @@ namespace Gedung_Olahraga
             Futsal futsal_satu = new Futsal("Lapangan 1" ,"Reguler");
             GOR.TambahLapanganFutsal(futsal_satu);
 
+            Renang anak = new Renang("Pool Anak-anak", "Anak-Anak", 25000, 15, 10, 1);
+            GOR.TambahKolamRenang(anak);
+
+            Renang dewasa = new Renang("Pool Dewasa", "Dewasa", 35000, 30, 20, 3);
+            GOR.TambahKolamRenang(dewasa);
+
+            Fitness fitness1 = new Fitness("Fitness 1", 50000);
+            GOR.TambahFitness(fitness1);
+
             ClsTransfer.gor = GOR;
 
             transaksi = new Transaksi();
@@ -222,6 +231,39 @@ namespace Gedung_Olahraga
             f8.MdiParent = this;
             f8.Activate();
             f8.Show();
+        }
+
+        Form9 f9;
+        private void button4_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+                form.Hide();
+            f9 = new Form9();
+            f9.MdiParent = this;
+            f9.Show();
+            f9.refresh();
+            f9.refresh2();
+        }
+
+        Form10 f10;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+                form.Hide();
+            f10 = new Form10();
+            f10.MdiParent = this;
+            f10.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string s = "Created by :\n";
+            s += "1. Adrian Hartanto [14.111.1537]\n";
+            s += "2. William Sumitro [14.111.1821]\n";
+            s += "3. Chyntia                [14.111.0817]\n";
+            s += "4. Agustini               [14.111.0523]\n";
+            s += "5. Kelvin                   [14.111.1308]\n";
+            MessageBox.Show(s); 
         }
     }
 }

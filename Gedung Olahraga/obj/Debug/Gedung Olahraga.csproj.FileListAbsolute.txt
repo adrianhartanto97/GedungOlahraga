@@ -16,3 +16,5 @@ D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahr
 D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form6.resources
 D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form7.resources
 D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form8.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form9.resources
+D:\Kuliah\Semester 4\Pemrograman Berorientasi Objek\Gedung Olahraga\Gedung Olahraga\obj\Debug\Gedung_Olahraga.Form10.resources

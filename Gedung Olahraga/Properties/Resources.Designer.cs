@@ -153,6 +153,16 @@ namespace Gedung_Olahraga.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit_member {
+            get {
+                object obj = ResourceManager.GetObject("edit_member", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fitness {
             get {
                 object obj = ResourceManager.GetObject("fitness", resourceCulture);
@@ -173,9 +183,29 @@ namespace Gedung_Olahraga.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_member {
+            get {
+                object obj = ResourceManager.GetObject("new_member", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap renang {
             get {
                 object obj = ResourceManager.GetObject("renang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show_member {
+            get {
+                object obj = ResourceManager.GetObject("show_member", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

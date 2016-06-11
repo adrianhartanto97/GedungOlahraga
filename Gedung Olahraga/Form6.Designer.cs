@@ -204,6 +204,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = " Register Member Baru";
